@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="136px" height="136px" viewBox="0 0 136 136" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Gold caller ID &amp; more</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#976A00" offset="0%"></stop>
+            <stop stop-color="#5D3800" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="64" cy="64" r="64"></circle>
+        <linearGradient x1="-0.489700672%" y1="99.5102993%" x2="99.5102993%" y2="0.489700672%" id="linearGradient-4">
+            <stop stop-color="#FEC240" offset="0%"></stop>
+            <stop stop-color="#FDEA8A" offset="49.4580925%"></stop>
+            <stop stop-color="#B97B1D" offset="100%"></stop>
+        </linearGradient>
+        <path d="M19.0600726,37.6470588 L109.176471,37.6470588 C111.25566,37.6470588 112.941176,39.3325751 112.941176,41.4117647 L112.941176,64 L112.941176,86.5882353 C112.941176,88.6674249 111.25566,90.3529412 109.176471,90.3529412 L19.0600726,90.3529412 C16.980883,90.3529412 15.2953668,88.6674249 15.2953668,86.5882353 L15.2953668,64 L15.2953668,41.4117647 C15.2953668,39.3325751 16.980883,37.6470588 19.0600726,37.6470588 Z" id="path-5"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#A08B4C" offset="0%"></stop>
+            <stop stop-color="#52421C" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-8" cx="41.4117647" cy="63.0588235" r="15.0588235"></circle>
+    </defs>
+    <g id="Gold-caller-ID-&amp;-more" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-18" transform="translate(4.000000, 4.000000)">
+            <g id="Group-16">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <use id="Oval-6" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                <path d="M69.6470588,56.4705882 L96,56.4705882 C97.0395948,56.4705882 97.8823529,57.3133464 97.8823529,58.3529412 L97.8823529,58.3529412 C97.8823529,59.392536 97.0395948,60.2352941 96,60.2352941 L69.6470588,60.2352941 C68.607464,60.2352941 67.7647059,59.392536 67.7647059,58.3529412 L67.7647059,58.3529412 C67.7647059,57.3133464 68.607464,56.4705882 69.6470588,56.4705882 Z" id="Rectangle" fill="#675325" mask="url(#mask-6)"></path>
+                <rect id="Rectangle" fill-opacity="0.5" fill="#675325" mask="url(#mask-6)" x="67.7647059" y="67.7647059" width="22.5882353" height="3.76470588" rx="1.88235294"></rect>
+                <mask id="mask-9" fill="white">
+                    <use xlink:href="#path-8"></use>
+                </mask>
+                <use id="Mask" fill="url(#linearGradient-7)" xlink:href="#path-8"></use>
+                <circle id="Oval-10" fill="url(#linearGradient-4)" mask="url(#mask-9)" cx="41.4117647" cy="60.0470588" r="4.51764706"></circle>
+                <circle id="Oval-10" fill="url(#linearGradient-4)" mask="url(#mask-9)" cx="41.4117647" cy="76.6117647" r="9.03529412"></circle>
+                <g id="Group-13" mask="url(#mask-9)" fill="#FFFFFF">
+                    <g transform="translate(96.000000, 40.000000) rotate(-315.000000) translate(-96.000000, -40.000000) translate(76.800000, 19.200000)" id="Combined-Shape">
+                        <path d="M19.1034671,21.1668219 L17.9672292,39.3218682 L16.8309912,21.1668219 L17.9672292,3.01177556 L19.1034671,21.1668219 Z" transform="translate(18.901579, 21.166822) rotate(-270.000000) translate(-18.901579, -21.166822) "></path>
+                        <path d="M19.1034671,21.1668219 L17.9672292,39.3218682 L16.8309912,21.1668219 L17.9672292,3.01177556 L19.1034671,21.1668219 Z" transform="translate(18.901579, 21.166822) rotate(-180.000000) translate(-18.901579, -21.166822) "></path>
+                    </g>
+                </g>
+            </g>
+            <g id="Group-17" transform="translate(90.422183, 38.753553) rotate(-315.000000) translate(-90.422183, -38.753553) translate(71.922183, 19.753553)" fill="#FFFFFF">
+                <path d="M18.8366841,19.0199666 L17.7004462,37.1750129 L16.5642082,19.0199666 L17.7004462,0.864920263 L18.8366841,19.0199666 Z" id="Combined-Shape" transform="translate(18.634796, 19.019967) rotate(-270.000000) translate(-18.634796, -19.019967) "></path>
+                <path d="M18.8366841,19.0199666 L17.7004462,37.1750129 L16.5642082,19.0199666 L17.7004462,0.864920263 L18.8366841,19.0199666 Z" id="Combined-Shape" transform="translate(18.634796, 19.019967) rotate(-180.000000) translate(-18.634796, -19.019967) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

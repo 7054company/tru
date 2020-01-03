@@ -1,0 +1,38 @@
+{
+  "name": "Truecaller",
+  "short_name": "Truecaller",
+  "start_url": "/?homescreen=1",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0086FE",
+  "background_color": "#0086FE",
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.truecaller",
+      "id": "com.truecaller"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://itunes.apple.com/us/app/truecaller-spam-identification-block/id448142450"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

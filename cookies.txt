@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.truecaller.com	TRUE	/	FALSE	1999999999	__cfduid	d6aa5513efc532d982816124d4ba8e89a1578025996
+www.truecaller.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+www.truecaller.com	TRUE	/	FALSE	1999999999	XLBS3	XLBS2|Xg7Fz|Xg7Fn
+

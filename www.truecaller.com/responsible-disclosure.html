@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from www.truecaller.com/responsible-disclosure by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2020 04:35:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsible Disclosure - Truecaller</title>
+  <meta name="description" content="Making your communication safe &amp; efficient.">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Open+Sans:400,400i,700" rel="stylesheet">
+  <style>
+    a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}html{font-weight:100%;box-sizing:border-box;}*,*:before,*:after{box-sizing:inherit;}img{max-width:100%;}::-webkit-scrollbar{display:none;}input,select,button{-webkit-appearance:none;-moz-appearance:none;appearance:none;}
+    html, body {
+      font-family:  'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 2;
+      color: #5f7d8c;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+    }
+    @media screen and (min-width: 640px) {
+      html, body {
+        font-size: 16px;
+      }
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+      font-weight: 700;
+      color: #05283c;
+      max-width: 800px;
+    }
+    h2 {
+      font-size: 3rem;
+      line-height: 1.25;
+      margin-bottom: 3rem;
+    }
+    h3 {
+      font-size: 1.75rem;
+      line-height: 1.5;
+      padding-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    h4, h5, h6 {
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: 2rem;
+    }
+    a {
+      color: #0086FE;
+    }
+    p {
+      margin-bottom: 2rem;
+      max-width: 700px;
+    }
+    strong {
+      font-weight: 700;
+    }
+    small {
+      font-size: .8rem;
+    }
+    em {
+      font-style: italic;
+    }
+
+    ol, ul {
+      max-width: 700px;
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+    }
+    ol li {
+      list-style: lower-alpha;
+      margin-bottom: 2rem;
+    }
+    ul li {
+      list-style: disc;
+      margin-bottom: 2rem;
+    }
+    .nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border-bottom: 1px solid #e6ebef;
+    }
+    .nav__inner {
+      max-width: 1000px;
+      padding: 0 1rem;
+      height: 100%;
+      margin: auto;
+    }
+    @media screen and (min-width: 640px) {
+      .nav__inner {
+        padding: 0 4rem;
+      }
+    }
+    .nav__logo {
+      margin: 2rem 0 1rem;
+      display: inline-block;
+      width: 166px;
+      height: 32px;
+      overflow: hidden;
+      text-indent: -999px;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjMDA4NmZlIiB3aWR0aD0iMTE5IiBoZWlnaHQ9IjIzIiB2aWV3Qm94PSIwIDAgMTE5IDIzIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik00OC44MjMgMTEuODIyYy4zMjQgMS40NjItMS43NjIgMi42OTQtNC41NTggMy4xMTUuMDA4LS42NTQuMjQ2LTIuMzk3IDEuODk2LTMuMjU1IDEuMTU1LS41ODQgMi41MDgtLjU1NiAyLjY2Mi4xNG0zLjI4NiA1LjIzNGMtLjM0OCAwLTIuNDA1IDIuMjY2LTUuMDM1IDIuNDYtMS44NTIuMTQ3LTIuODQ0LTEuMTg2LTIuODQ0LTIuMDU0IDUuNzA2LS44MDcgOC4wMzktMy4wMzkgOC4wMzktNS44NzYgMC0xLjkwNi0xLjYzOC0zLjkwNi00LjMzLTMuOTA2LTUuOTA4IDAtNy40OCA1LjY5LTcuNjY3IDkuNjQ5LS4xMzcgMS43MzctMS4xMzQgMi0xLjkxNCAxLjk1NC0uNzgtLjA0Ni0xLjM1My0uNzM2LTEuMjEzLTEuOTY3TDM4LjMgOS40OTNjLjAxNC0uMTM0LjMxOC0xLjcxNS0uODEtMS43NjQtMS4xOS0uMDUxLTIuNzUxLjUwMS0zLjAxOCAyLjE5Mi0uMjYxIDEuNjU3LS4zNzEgMi42MDItLjU4MiAzLjk0Ny0uMTY3IDEuMTI4LS4zNzggMi4yNzMtLjQ3MiAzLjM1NC0uMjE0IDEuMDMyLS41OCAxLjUzMS0xLjY2NiAxLjUzOC0xLjM3OC0uMTQzLTEuMzQ4LTEuMzQ5LTEuMjAzLTIuMzY2bC45Ni02Ljg4M2MuMDE0LS4xMzUuMzE4LTEuNzMyLS44MTEtMS43OC0xLjE5LS4wNTEtMi43NS41MTYtMy4wMTcgMi4yMDctLjA2Ni40Mi0uMTIzLjc5My0uMTc0IDEuMTR2LS4wMTJjLS4yODIgMS45Ny0xLjIwOSAyLjg1LTIuMjY1IDIuNjE1LTEuMDU2LS4yMzQtLjUyMi0zLjE2NC0uNTE3LTMuMjAyLjM2My0yLjQ0OS0uNTExLTMuMzEtMi42NDItMi40LTEuMTIyLjQ4LTIuMjk0IDEuNzItMy4wNiAyLjY0OGwuMTgtMS4yMzNjLjAxNS0uMTM1LjMxOC0xLjcxNi0uODEtMS43NjQtMS4xOS0uMDUxLTIuNzUuNS0zLjAxNyAyLjE5MWwtLjAzLjE4NXYtLjAwNHMtLjEyOS43MjMtLjMyIDEuMzdhMjUuNzQ2IDI1Ljc0NiAwIDAgMS0uOTkyIDIuNjg3IDE5LjYgMTkuNiAwIDAgMS0uOTQ2IDEuODg1Yy0uMTczLjMtLjM1NC41OTItLjU0Ny44Ny0uMTkxLjI4LS4zOTQuNTQ2LS42MDYuNzkzLS40MjQuNDk2LS44OTMuOTE2LTEuMzYzIDEuMjA1YTMuNzcgMy43NyAwIDAgMS0uMjQ0LjEzNmMtMi4yOTEuOTkxLTIuNzEtMS4yMTQtMi43Ni0xLjU0NGExMC4wOTYgMTAuMDk2IDAgMCAxLS4wNTEtMS4zODRjLjAwOC0uMzAzLjAyOC0uNjE0LjA1OS0uOTI5LjA2MS0uNjMuMTY2LTEuMjc1LjI5Ni0xLjkyMy4xMTQtLjU4Mi4yNTUtMS4xNjYuNDEzLTEuNzQ4IDEuMzUuMTUgMi42MDEuMjY5IDMuMDUxLjMwMSAxLjA4LjA3OCAxLjY5NS0uNDggMS43OTgtMS4wODguMDgxLS40NzYuMDI1LS4yMTYuMjItMS4zNC4yOS0xLjY2Ni0uMDUtMS42NjYtMS40Mi0xLjY2Nkg5LjU5OWwuMS0uMjQ4Yy41MS0xLjI1IDEuMTY5LTIuMzYgMS44MjgtMy42MDguODQ4LTEuNjAzLjYyNy0xLjk3Ni0uNDEtMi44NjMtMy4yNDItMi4zOC00Ljg3IDEuODY3LTUuMjUgMi41MzlhMzMuMzEzIDMzLjMxMyAwIDAgMC0uODYzIDIuMTI5Yy0uMjU1LjY3Ny0uNDg4IDEuMzYtLjY5OCAyLjA1MkguOTM1Yy0xLjAyOCAwLS45MzMuOTM3LS45MzMuOTM3IDAgLjg4IDIuMTA0IDEuNjcyIDMuNTMgMi4wODktLjExOC41NzQtLjIyMSAxLjE1NC0uMzA1IDEuNzQxYTIzLjAzIDIzLjAzIDAgMCAwLS4yMTQgMi40MmMtLjAyNy44MjYtLjAwNyAxLjY3NS4xMTkgMi41NjEuMDY2LjQ0My4xNTUuODk3LjI5NSAxLjM2MWE2Ljk1IDYuOTUgMCAwIDAgLjU4NCAxLjQxNmMuMjYuNDc1LjYwNy45NTIgMS4wNTggMS4zN2E0LjU4OCA0LjU4OCAwIDAgMCAyLjQzNiAxLjE3NmMuMjgyLjA0NC42MjQuMDYxLjg4OS4wNmE1LjY2MSA1LjY2MSAwIDAgMCAxLjU0My0uMjIzYy41LS4xNDcuOTctLjM2NiAxLjM4OC0uNjMyYTYuMjk4IDYuMjk4IDAgMCAwIDEuMS0uOTA2Yy42MzgtLjY1OSAxLjA5Mi0xLjM4NSAxLjQ2NS0yLjEwOC4wODMtLjE2My4xNjItLjMyNi4yMzctLjQ5LS4xMyAxLjUwNS0uMDY1IDIuODM2LjUgMy41MzIgMS4wNzYgMS4zMjcgMi41OS44OTYgMi43MzYtLjE1Ny4xMjktLjkyLjQxNi0yLjc3LjYyNC00LjEzOC4yNDctMS40MjUuNTM4LTIuMjY5IDEuMDUyLTMuNDMzLjYwMy0xLjM3IDIuMzE4LTIuNSAyLjI4Ny0uOTEtLjA5MiA0LjY2NCAzLjQxMyA0Ljc1OCA1LjQzNiAyLjY4NC0uMjg5IDIuMDQ0LS4zOCAzLjk3MS43MDcgNS4yODQgMi4xMjIgMi41NjMgNS4zMSAxLjI5NCA2Ljk1Ny4xNzQgMS40NzUgMi4wMDMgNS4zMjMgMS41ODQgNi45OTItLjQ2MiAxLjIwNCAxLjY1IDMuNDQxIDEuODM1IDUuMTA3IDEuNzY3IDQuNzc4LS4yNCA3LjczNy01Ljc4NSA1LjU4NC01Ljc4NU02MS44MzEgNy43MzhjMS43NzQgMCAzLjI1Ny42NzEgNC4yMTYgMS42NjNMNjQuMSAxMi4wNTVjLS42OTgtLjU4My0xLjMzNy0uODQ1LTIuMDA2LS44NDUtMi4wNjUgMC0zLjM3NCAxLjYwNC0zLjM3NCA0LjExMiAwIDIuNTEgMS4zNjcgNC4xMTQgMy4yMjggNC4xMTQgMS4wNDcgMCAxLjg5LS40OTYgMi41ODgtMS4wNWwxLjcxNiAyLjcxMmMtMS4zOTYgMS4yMjUtMy4yMjggMS44MDktNC43OTggMS44MDktNC4wMTMgMC03LjEyNC0yLjc3MS03LjEyNC03LjU4NSAwLTQuODEyIDMuNTE4LTcuNTg0IDcuNTAyLTcuNTg0TTcyLjc0NiAxOS41ODJjLjk4OSAwIDEuNjI5LS40NjcgMi4zODUtMS4yMjV2LTIuNTM4Yy0zLjA1My40MDgtNC4wNDIgMS4yODMtNC4wNDIgMi4zOTIgMCAuOTMzLjY0IDEuMzcgMS42NTcgMS4zN20yLjM4NS02LjMzYy0uMDg4LTEuMjgzLS43MjctMi4xLTIuMjY4LTIuMS0xLjIyMiAwLTIuNDQzLjQ5Ni0zLjgzOSAxLjMxM2wtMS41MTItMi44M2MxLjgzMi0xLjEwOCAzLjg5Ny0xLjg5NiA2LjE2NS0xLjg5NiAzLjY5MyAwIDUuNzI4IDIuMSA1LjcyOCA2LjUzNXY4LjI4NGgtMy40OWwtLjMyLTEuNDg3aC0uMDg2Yy0xLjIyMiAxLjA3OS0yLjU4OCAxLjgzNy00LjIxNyAxLjgzNy0yLjYxNyAwLTQuMjc0LTEuOTI1LTQuMjc0LTQuMzc2IDAtMy4wMzMgMi40MTMtNC42OTYgOC4xMTMtNS4yOE04MS40MjIgMjIuNTU3aDQuMjc0VjIuMTA4aC00LjI3NG02LjQzNCAyMC40NDloNC4yNzVWMi4xMDhoLTQuMjc1bTE1LjM1MSAxMS43MjdjMC0xLjY2My0uNjk4LTIuODMtMi40MTMtMi44My0xLjMzOCAwLTIuNTAxLjkwNC0yLjc5MiAyLjgzaDUuMjA1em0tMi41LTYuMDk3YzQuMSAwIDYuMTM1IDMuMDA1IDYuMTM1IDYuOTQzIDAgLjc1OC0uMDg3IDEuNDU4LS4xNzQgMS44MDlIOTguMDNjLjM3OSAyLjE4NyAxLjgzMiAzLjE1IDMuNzUyIDMuMTUgMS4wNzUgMCAyLjA2NC0uMzIxIDMuMTEtLjk2M2wxLjQyNiAyLjU5NmMtMS40ODMgMS4wMjEtMy40MDIgMS42MzQtNS4xMTggMS42MzQtNC4xMyAwLTcuMjk5LTIuOC03LjI5OS03LjU4NCAwLTQuNjk3IDMuMzQ0LTcuNTg1IDYuODA0LTcuNTg1em03Ljg5Ny4zNWgzLjQ5bC4yOSAyLjUzOGguMTE2YzEuMDQ3LTEuOTU0IDIuNjE3LTIuODg4IDQuMS0yLjg4OC44MTQgMCAxLjMwOS4xMTcgMS43MTYuMjkybC0uNjk4IDMuNzA1Yy0uNTIzLS4xNDYtLjk2LS4yMzQtMS41Ny0uMjM0LTEuMDc2IDAtMi40MTQuNy0zLjE3IDIuNjU1djguNGgtNC4yNzRWOC4wODl6Ii8+PC9zdmc+');
+      background-size: auto 75%;
+      background-position: 0 center;
+      background-repeat: no-repeat;
+    }
+    @media screen and (min-width: 640px) {
+      .nav__logo {
+        width: 166px;
+        height: 32px;
+        background-size: 100% 100%;
+      }
+    }
+    .main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 0 1rem 4rem;
+    }
+    @media screen and (min-width: 640px) {
+      .main {
+        padding: 0 4rem 4rem;
+      }
+    }
+    .section {
+      padding: 128px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="nav">
+    <div class="nav__inner">
+      <h1 class="nav__logo">Truecaller Responsible Disclosure</h1>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="section">
+        <h2>Truecaller Responsible Disclosure</h2>
+        <p>With Truecaller playing an important role in our users’ lives we take their security very seriously. If you believe you have found a security vulnerability in Truecaller we encourage you to let us know right away. This gives us the opportunity to resolve the problem quickly before any other type of issue may occur.</p>
+        <p>We are interested in learning about security issues on all Truecaller properties, including our client software, SDKs and web services owned and operated by Truecaller.</p>
+        <h3>How do I report an issue?</h3>
+        <p>Reporting is easy. Send an email to <a href="mailto:security@truecaller.com">security@truecaller.com</a> with all the relevant information you have. We’ll reply as quickly we can and keep you updated on the progress of the fix.</p>
+        <h3>A few rules</h3>
+        <ul>
+          <li>Investigations can take time. You will need to give us time to investigate the issue you report before making public any information about the report or sharing information online or with others.</li>
+          <li>You should avoid privacy violations and disruptions to others, including (but not limited to) destruction of data and interruption or degradation of our services.</li>
+          <li>Truecaller is under no obligation to disclose any of Truecaller’s security steps taken after the report is given. Our team will, however, reply to all security reports on the progress taken.</li>
+        </ul>
+        <!--
+          <h3>We like to share credit where credit is due</h3>
+          <p>We'd like to publicly thank the following people for their help in reporting security issues to us. We're very grateful for their assistance.</p>
+        -->
+    </div>
+  </div>
+</body>
+
+<!-- Mirrored from www.truecaller.com/responsible-disclosure by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 03 Jan 2020 04:35:14 GMT -->
+</html>
